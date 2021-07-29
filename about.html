@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Acerca De</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery.lightbox-0.5.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<!-- Loading -->
+<script type="text/javascript">
+$(function () {
+    $('.main_content, .main_navi').hide();
+    $(window).load(function () {
+        $('#loader').fadeOut();
+        $('.main_content, .main_navi').fadeIn(2000);
+    });
+});
+$(document).ready(function () {
+    $("body").css("display", "none");
+    $("body").fadeIn(2000);
+    $("a.transition").click(function (event) {
+        event.preventDefault();
+        linkLocation = this.href;
+        $("body").fadeOut(1000, redirectPage);
+    });
+
+    function redirectPage() {
+        window.location = linkLocation;
+    }
+});
+</script>
+</head>
+<body id="home">
+<div id="container">
+  <div class="stripe"></div>
+  <div id="content">
+    <!-- Header -->
+    <div id="header">
+      <div id="loader"><img alt="" src="img/ajax-loader.gif" /></div>
+      <ul class="main_navi">
+        <li><a class="transition" href="index.html">Inicio</a></li>
+        <li class="current"><a class="transition" href="about.html">Acerca De</a></li>
+        <li><a class="transition" href="contacts.html">Contacto</a></li>
+      </ul>
+      <a href="index.html"><img alt="" class="logo" src="img/logo.png" /></a> </div>
+    <!-- Top Content -->
+    <div class="main_content">
+      <h1 class="about">Diseñador desde el Comienzo</h1>
+      <p class="about">Desde antes de finalizar la educación secundaria tuve muy claro el camino que tomaría mi educación profesional. Conocí el Diseño Gráfico en el año de 1999, desde entonces mi carrera profesional y mi preparación académica se han retroalimentado contemporáneamente para que en este momento tenga el conocimiento y la experiencia necesaria para crear elementos gráficos efectivos, así como resolver problemas de comunicación complejos que requieren creatividad y un amplio conocimiento tanto en medios de produccion, distribución y planeación estratégica.  </p>
+      <div class="our_team">
+        <h3>Escolaridad:</h3>
+        <div class="member"> <img alt="" src="img/team/about/uam.png" />
+          <div class="team_info">
+            <h2>UAM AZCAPOTZALCO</h2>
+            <h4>Licenciatura en Diseñador de la Comunicación Gráfica</h4>
+            <p>La Universidad Autónoma Metropolitana Unidad Azcapotzalco tiene como misión impulsar la vinculación de la universidad con el Estado, la industria y la sociedad.</p>
+          </div>
+        </div>
+        <div class="member last_img"> <img alt="" src="img/team/about/poli.png" />
+          <div class="team_info">
+            <h2>POLITECNICO DI MILANO</h2>
+            <h4>Intercambio Bilateral de Investigación</h4>
+            <p>El Politécnico de Milán, (Politecnico di Milano en italiano), es una universidad pública italiana de carácter científico-tecnológico. Tiene como objetivo la formación de ingenieros, arquitectos y diseñadores.</p>
+          </div>
+        </div>
+        <div class="member"> <img alt="" src="img/team/about/cetis.png" />
+          <div class="team_info">
+            <h2>CETIS 165</h2>
+            <h4>Bachillerato Tecnológico en Administración</h4>
+            <p>El bachillerato en Administración tiene como objetivo formar especialistas capaces de participar activamente aplicando técnicas administrativas para analizar, interpretar, proponer, modificar o innovar sistemas administrativos.
+          </div>
+        </div>
+        <div class="member last_img"> <img alt="" src="img/team/about/cetis.png" />
+          <div class="team_info">
+            <h2>CETIS 165</h2>
+            <h4>Bachillerato Tecnológico en Diseño Gráfico</h4>
+            <p>Tiene como objetivo crear soluciones efectivas e innovadoras a las necesidades de comunicación gráfica de las organizaciones y de la sociedad en general, mediante el uso eficiente de los distintos medios de expresión visual a su alcance.</p>
+          </div>
+        </div>
+      </div>
+      <div id="footer"> 2015 Derechos Reservados. | Daniel Hernández.
+        <ul class="footer_navi">
+          <li><a class="transition" href="index.html">Inicio</a></li>
+          <li class="current"><a class="transition" href="about.html">Acerca De</a></li>
+          <li><a class="transition" href="contacts.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
