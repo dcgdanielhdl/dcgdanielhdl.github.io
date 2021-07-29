@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Contacto</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" /> 
+<!--[if IE]><link href="css/IE_input_bug.css" rel="stylesheet" type="text/css" /><![endif]-->
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery.lightbox-0.5.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/input_clear.js"></script>
+<!-- Loading -->
+<script type="text/javascript">
+$(function () {
+    $('.main_content, .main_navi').hide();
+    $(window).load(function () {
+        $('#loader').fadeOut();
+        $('.main_content, .main_navi').fadeIn(2000);
+    });
+});
+$(document).ready(function () {
+    $("body").css("display", "none");
+    $("body").fadeIn(2000);
+    $("a.transition").click(function (event) {
+        event.preventDefault();
+        linkLocation = this.href;
+        $("body").fadeOut(1000, redirectPage);
+    });
+
+    function redirectPage() {
+        window.location = linkLocation;
+    }
+});
+</script>
+</head>
+<body id="portfolio">
+<div id="container">
+  <div class="stripe"></div>
+  <div id="content">
+    <!-- Header -->
+    <div id="header">
+      <div id="loader"><img alt="" src="img/ajax-loader.gif" /></div>
+      <ul class="main_navi">
+        <li><a class="transition" href="index.html">Inicio</a></li>
+        <li><a class="transition" href="about.html">Acerca De</a></li>
+        <li class="current"><a class="transition" href="contacts.html">Contacto</a></li>
+      </ul>
+      <a href="index.html"><img alt="" class="logo" src="img/logo.png" /></a> </div>
+    <!-- Top Content -->
+    <div class="main_content">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d940.3937872748288!2d-99.20856470000005!3d19.473875900000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d20261a7905449%3A0xe1583a2abff46820!2sMixt%C3%B3n%2C+Santiago+Ahuizotla%2C+Ciudad+de+M%C3%A9xico%2C+D.F.!5e0!3m2!1ses!2smx!4v1436511685678" width="900" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div id="about_page">
+      
+      </div>
+     
+        <div class="other_contacts">
+          <h2>Encuentrame Aquí</h2>
+          <p>Si tienes algún proyecto en mente o buscas como solucionar tu problemas de comunicación con tus clientes y aumentar tus ventas, puedes contactarme por estos medios.
+         <BR><br> Siempre estoy en busqueda de nuevos proyecto innovadores que aporten algo a la sociedad, a mi diciplina y al mundo en general.</p>
+          <div class="contact_item phone">55-76--11-09</div>
+          <div class="contact_item mail">dcgdanielhdl@live.com</div>
+          <div class="contact_item twitter">044-55-16-89-87-06</div>
+        </div>
+      </div>
+      <div id="footer">2015 Derechos Reservados. | Daniel Hernández.
+        <ul class="footer_navi">
+          <li><a class="transition" href="index.html">Inicio</a></li>
+          <li><a class="transition" href="about.html">Acerca De</a></li>
+          <li class="current"><a class="transition" href="contacts.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
