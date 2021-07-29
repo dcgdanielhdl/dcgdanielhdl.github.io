@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<head>
+<title>Daniel Hernández</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<!--[if IE]><link href="css/IE_input_bug.css" rel="stylesheet" type="text/css" /><![endif]-->
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery.lightbox-0.5.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
+<script type="text/javascript" src="js/input_clear.js"></script>
+<!-- Lightbox -->
+<script type="text/javascript">
+$(function () {
+    $('.latest_gallery a').lightBox();
+});
+</script>
+<!-- Loading -->
+<script type="text/javascript">
+$(function () {
+    $('.main_content, .main_navi').hide();
+    $(window).load(function () {
+        $('#loader').fadeOut();
+        $('.main_content, .main_navi').fadeIn(2000);
+    });
+});
+$(document).ready(function () {
+    $("body").css("display", "none");
+    $("body").fadeIn(2000);
+    $("a.transition").click(function (event) {
+        event.preventDefault();
+        linkLocation = this.href;
+        $("body").fadeOut(1000, redirectPage);
+    });
+
+    function redirectPage() {
+        window.location = linkLocation;
+    }
+});
+</script>
+</head>
+<body id="home">
+<div id="container">
+  <div class="stripe"></div>
+  <div id="content">
+    <!-- Header -->
+    <div id="header">
+      <div id="loader"><img alt="" src="img/ajax-loader.gif" /></div>
+      <ul class="main_navi">
+        <li class="current"><a class="transition" href="index.html">Inicio</a></li>
+        <li><a class="transition" href="about.html">Acerca De</a></li>
+        <li><a class="transition" href="contacts.html">Contacto</a></li>
+      </ul>
+      <img alt="" class="logo" src="img/logo.png" /> </div>
+    <!-- Top Content -->
+    <div class="main_content">
+      <div id="top_content">
+        <div class="latest_gallery">
+          <h2>Una Vista Rápida</h2>
+          <div class="latest_img"><a href="img/lightbox/latest_gallery/Rapida_1.png"><img alt="" src="img/from_gallery/1.png" /></a></div>
+          <div class="latest_img"><a href="img/lightbox/latest_gallery/Rapida_2.png"><img alt="" src="img/from_gallery/2.png" /></a></div>
+          <div class="latest_img last_img"><a href="img/lightbox/latest_gallery/Rapida_3.png"><img alt="" src="img/from_gallery/3.png" /></a></div>
+          <div class="latest_img"><a href="img/lightbox/latest_gallery/Rapida_4.png"><img alt="" src="img/from_gallery/4.png" /></a></div>
+          <div class="latest_img"><a href="img/lightbox/latest_gallery/Rapida_5.png"><img alt="" src="img/from_gallery/5.png" /></a></div>
+          <div class="latest_img last_img"><a href="img/lightbox/latest_gallery/Rapida_6.png"><img alt="" src="img/from_gallery/6.png" /></a></div>
+                  <div class="latest_img last_img"><a href="img/lightbox/latest_gallery/Rapida_7.png"></a></div>
+                  <div class="latest_img last_img"><a href="img/lightbox/latest_gallery/Rapida_8.png"></a></div>
+                  <div class="latest_img last_img"><a href="img/lightbox/latest_gallery/Rapida_9.png"></a></div>
+                  <div class="latest_img last_img"><a href="img/lightbox/latest_gallery/Rapida_10.png"></a></div>
+                  <div class="latest_img last_img"><a href="img/lightbox/latest_gallery/Rapida_11.png"></a></div>
+                  <div class="latest_img last_img"><a href="img/lightbox/latest_gallery/Rapida_12.png"></a></div>
+                  <div class="latest_img last_img"><a href="img/lightbox/latest_gallery/Rapida_13.png"></a></div>
+                   <div class="latest_img last_img"><a href="img/lightbox/latest_gallery/Rapida_14.png"></a></div>
+                    <div class="latest_img last_img"><a href="img/lightbox/latest_gallery/Rapida_15.png"></a></div>
+                     <div class="latest_img last_img"><a href="img/lightbox/latest_gallery/Rapida_16.png"></a></div>
+                      <div class="latest_img last_img"><a href="img/lightbox/latest_gallery/Rapida_17.png"></a></div>
+                       <div class="latest_img last_img"><a href="img/lightbox/latest_gallery/Rapida_18.png"></a></div>
+                        <div class="latest_img last_img"><a href="img/lightbox/latest_gallery/Rapida_19.png"></a></div>
+                         <div class="latest_img last_img"><a href="img/lightbox/latest_gallery/Rapida_20.png"></a></div>
+        </div>
+        </div>
+        <div class="main_img"> <a class="transition" href="kepler22b.html"><img alt="" src="img/main_img1.png" /></a> </div>
+    </div>
+      <!-- Our best work -->
+      <div id="best_work">
+        <div class="best_work">
+          <h3>Algunos de mis trabajos</h3>
+          <div><a class="transition" href="fotografia.html"><img alt="" src="img/best_work/1.png" /></a> <a class="transition" href="fotografia.html"><img alt="" class="view" src="img/linz.png" /></a> </div>
+          <div><a class="transition" href="ilustracion.html"><img alt="" src="img/best_work/2.png" /></a> <a class="transition" href="view-work.html"><img alt="" class="view" src="img/linz.png" /></a> </div>
+          <div class="last_img"><a class="transition" href="editorial.html"><img alt="" src="img/best_work/3.png" /></a> <a class="transition" href="view-work.html"><img alt="" class="view" src="img/linz.png" /></a> </div>
+          <div><a href="envase.html"><img alt="" class="transition" src="img/best_work/4.png" /></a> <a class="transition" href="envase.html"><img alt="" class="view" src="img/linz.png" /></a> </div>
+          <div><a class="transition" href="senaletica.html"><img alt="" src="img/best_work/5.png" /></a> <a class="transition" href="señaletica.html"><img alt="" class="view" src="img/linz.png" /></a> </div>
+          <div class="last_img"><a class="transition" href="multidiciplina.html"><img alt="" src="img/best_work/6.png" /></a> <a class="transition" href="multidiciplina.html"><img alt="" class="view" src="img/linz.png" /></a> </div>
+		  <div><a href="criteria.html"><img alt="" class="transition" src="img/best_work/Criteria.png" /></a> <a class="transition" href="envase.html"><img alt="" class="view" src="img/linz.png" /></a> </div>
+          <div><a class="transition" href="kalei.html"><img alt="" src="img/best_work/Kalei.png" /></a> <a class="transition" href="kalei.html"><img alt="" class="view" src="img/linz.png" /></a> </div>
+          <div class="last_img"><a class="transition" href="logos.html"><img alt="" src="img/best_work/logos.png" /></a> <a class="transition" href="logos.html"><img alt="" class="view" src="img/linz.png" /></a> </div>
+        </div>
+      </div>
+      <!-- How to Contact Us, What we do -->
+      <div id="info">
+        <div class="info_item float">
+          <h3>Áreas de Experiencia</h3>
+          <p>Comencé mi labor como diseñador a una edad temprana lo cual me he permitido adquirir conocimientos propios de diversas areas del diseño, me he desempeñado en <STRONG>Agencias de Publicidad, Empresas de Artes Gráficas, Publicidad BTL, Medios Masivos, Impresos y Digitales.</STRONG>  <a class="transitional" href="contacts.html"></a></p>
+        </div>
+        <div class="info_item">
+          <h3>Sobre el Diseño y la Comunicación Gráfica</h3>
+          <p>Creo que el diseño abarca mucho más que la estética. El diseño es fundamentalmente más. Diseño es la usabilidad. Es la arquitectura de información. Es accesibilidad. Todo esto es diseño. <br><STRONG>— Mark Boulton.</STRONG></p>
+        </div>
+      </div>
+      <!-- Latest on the blog -->
+      <div id="latest_blog">
+        <h3>Proyectos Recientes</h3>
+        <div class="post">
+          <div class="info_item float">
+            <h3><a class="transition" href="kepler22b.html"> Kepler 22-b Libro Interactivo de Realidad Aumentada.</a></h3>
+            <p>Libro de ciencia ficción que permite el uso de las nuevas tecnologías. En este caso la <STRONG>Realidad Aumentada 	(RA),</STRONG> para desplegar contenido que enriquece la historia y por medio de la App para dispositivos móviles pretende acercar a los niños y jóvenes a la lectura. <a class="transitional" href="kepler22b.html"></a></p>
+          </div>
+          <a class="transition" href="kepler22b.html"><img src="img/latest_blog/kepler1.jpg" alt="" /></a> </div>
+        <div class="post">
+          <div class="info_item float">
+            <h3><a class="transition" href="pepeapp.html">Web App Pepe Pizza´s.</a></h3>
+            <p><strong>App para dispositivos móviles Android, IOS,</strong> la cual permite una conectividad y acercamiento con lo usuarios nuevos y comensales asiduos al mejor Restaurante de Comida Rápida al norte del área metropolitana.  <a class="transitional" href="pepeapp.html"></a></p>
+          </div>
+          <a class="transition" href="pepeapp.html"><img src="img/latest_blog/pizza1.jpg" alt="" /></a> </div>
+      </div>
+     
+     
+      <!-- En curso -->
+      <div id="latest_blog">
+        <h3>La Paradoja del Conocimiento</h3> <h9>Aprendizaje y Actualización</h9>
+        <div class="post">
+          <div class="info_item float">
+            <h3>Diseño y Programación JQuery Mobile y HTML5</h3>
+            
+            <p><strong>JQuery Mobile</strong> es un <strong>Framework</strong> optimizado para dispositivos táctiles que está siendo desarrollado actualmente por el equipo de proyectos de jQuery. El desarrollo se centra en la creación de un <strong>Framework</strong> compatible con la gran variedad de smartphones y tablets, algo necesario en el creciente y heterogéneo mercado de <strong>dispositivos móviles.</strong></p>
+          </div>
+          <a class="transition" ></a><img src="img/latest_blog/jquery1.png" alt="" /></a> </div>
+        <div class="post">
+          <div class="info_item float">
+            <h3>Funciones y Aprovechamiento Google Analytics</h3>
+            <p>Google Analytics es un sistema creado por Google que te permite ver información acerca de los usuarios de un sitio web y también ver la cantidad de visitas que la pagina web posee. Con Google Analytics puedes controlar la calidad de las paginas web y como los visitantes responden al contenido. </p>
+          </div>
+          <a class="transition"><img src="img/latest_blog/google.png" alt="" /></a> </div>
+      </div>
+     
+    
+      <div id="footer"> 2015 Derechos Reservados. | Daniel Hernández.
+        <ul class="footer_navi">
+          <li class="current"><a class="transition" href="index.html">Inicio</a></li>
+          <li><a class="transition" href="about.html">Acerca De</a></li>
+          <li><a class="transition" href="contacts.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
